@@ -1,0 +1,24 @@
+version: 1
+formatters:
+  precise:
+    format: '%(asctime)s - %(levelname)s - %(message)s'
+    datefmt: '%H:%M:%S,%03d'
+  brief:
+    format: '%(levelname)s: %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: brief
+    stream: ext://sys.stdout
+  file_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: INFO
+    formatter: precise
+    filename: logs/birdwatch.log
+    when: midnight
+    backupCount: 7
+    encoding: utf8
+root:
+  level: DEBUG
+  handlers: [console, file_handler]

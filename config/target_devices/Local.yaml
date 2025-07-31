@@ -1,0 +1,9 @@
+files:
+  workspace_path: ~/workspaces/robot_ws/
+  source: install/setup.zsh
+  nodes: config/birdwatch/nodes.yaml
+  topics: config/birdwatch/topics.yaml
+  recordings: ~/Documents/birdwatch/recordings/
+  missions: ~/Documents/birdwatch/missions/
+  parameters: ~/Downloads/birdwatch_parameters/
+app_icon_path: resources/logos/Local.png

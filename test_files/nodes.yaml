@@ -1,0 +1,12 @@
+PX4:
+  run: true
+  order: '1'
+  command: cd ~/firmware/PX4-Autopilot/ && make px4_sitl gz_x500
+  delay_ms: '2000'
+  window: px4
+MAVROS:
+  run: true
+  order: '2'
+  command: ros2 launch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
+  delay_ms: '2000'
+  window: mavros

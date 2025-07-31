@@ -1,0 +1,23 @@
+files:
+  workspace_path: <path-to-folder>
+  source: <relative-to-workspace>
+  nodes: <relative-to-workspace>
+  topics: <relative-to-workspace>
+  recordings_global: <absolute-path-to-folder>
+  missions_global: <absolute-path-to-folder>
+  parameters: <relative-to-workspace>
+ssh_connection:
+  username: <username>
+  selected_network: <index>
+  networks:
+  - name: <network-1-name>
+    ip: <ip-address-in-network-1>
+  - name: <network-2-name>
+    ip: <ip-address-in-network-2>
+  - name: <network-3-name>
+    ip: <ip-address-in-network-3>
+color_theme:
+  primary: '#1F6AA5'
+  dark_primary: '#144870'
+  darker_primary: '#203A4F'
+app_icon_path: <path-to-png-icon>

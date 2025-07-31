@@ -1,0 +1,17 @@
+Estimator:
+  record_group: true
+  topics:
+  - record_topic: true
+    name: /estimator/current_pose
+Test:
+  record_group: true
+  topics:
+  - record_topic: true
+    name: /birdwatch/console_log
+IMU:
+  record_group: true
+  topics:
+  - record_topic: true
+    name: /mavros/imu/data_raw
+  - record_topic: true
+    name: /mavros/magnetometer/mag

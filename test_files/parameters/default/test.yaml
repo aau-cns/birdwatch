@@ -1,0 +1,19 @@
+single_string: Hello World!
+single_int: 1535
+array_string:
+- fist
+- second
+- third
+recursive:
+  single_int: 235
+  single_string: Hello
+  double_recursive:
+    some_list:
+    - alpha
+    - beta
+    some_value_again: 8454
+array_struct:
+- string: ten
+  number: 10
+- string: twenty
+  number: 20
